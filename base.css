@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    --main-font-family: 'Raleway', sans-serif;
+    --main-font-color: #F0FF42;
+    --bg-color: #379237;
+}
+
+body{
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h3{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+.mensagem{
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.box{
+    padding: 1rem 2rem;
+    border: 2px solid var(--main-font-color);
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 6rem;
+}
