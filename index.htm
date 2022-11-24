@@ -15,14 +15,16 @@
 
 <body>
     <h1>Acerte o Número</h1>
-    <h3>O número está entre <span>0</span> e <span>100</span> </h3>
+    <h3>O número está entre <span id="num-menor">0</span> e <span id="num-maior">100</span> </h3>
     <div id="chute" class="mensagem">
         <p>Você disse:</p>
-        <span class="box">20</span>
-        <p>O número é maior <i class="fa-sharp fa-solid fa-arrow-up"></i></p>
+        <span class="box" id="palpite">-</span>
+        <!-- <p>O número é maior <i class="fa-sharp fa-solid fa-arrow-up"></i></p> -->
     </div>
 
     <script src="./js/gerandoNumero.js"></script>
+    <script src="./js/reconhecimentoVoz.js"></script>
+    <script src="./js/validacao.js"></script>
 </body>
 
 </html>
