@@ -1,5 +1,5 @@
-const elementoChute = document.querySelector('#chute');
-// console.log(elementoChute);
+const blocoPalpite = document.querySelector('#chute');
+// console.log(blocoPalpite);
 
 const elementoPalpite = document.querySelector('#palpite');
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
@@ -18,5 +18,10 @@ function onSpeak(e){
 }
 
 function mostraPalpiteNaTela (p) {
-    elementoPalpite.innerHTML = p    
+    blocoPalpite.innerHTML = `
+        <p>Você disse:</p>
+        <span class="box" id="palpite">${p}</span>
+    `
 }
+
+recognition.addEventListener('end', () => recognition.start());
