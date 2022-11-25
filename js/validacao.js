@@ -15,6 +15,7 @@ function validaPalpite(palpite){
         document.body.innerHTML = `
         <h2>Você acertou!</h2>
         <h3>O número secreto era: ${p}</h3>
+        <button class="btn" id="btn">Jogar novamente</button>
         `
     } else if(p < numeroAleatorio){
         blocoPalpite.innerHTML += `<p>O número é maior <i class="fa-sharp fa-solid fa-arrow-up"></i></p>`
@@ -27,3 +28,10 @@ function validaPalpite(palpite){
 function validaNumero(p) {
     return Number.isNaN(p);
 }
+
+document.body.addEventListener('click', (e) => {
+    console.log(e);
+    if(e.target.id == "btn"){
+        window.location.reload();
+    }
+})
